@@ -4,6 +4,8 @@ An AI-powered Data Analytics platform built with **Python, Streamlit, SQL Server
 
 InsightAI enables users to upload datasets, clean data, perform exploratory data analysis (EDA), generate interactive visualizations, receive AI-style business insights, and export professional PDF reports—all through an intuitive web interface.
 
+
+🌐 **Live Demo:** https://insight-akshay-ai.streamlit.app/ 
 ---
 
 ## 🚀 Features
