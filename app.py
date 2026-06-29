@@ -489,7 +489,15 @@ elif page == "Reports":
             show_kpis(df)
             st.divider()
 
-            st.write("Generate a PDF report from the current dataset, analytics, and AI insights.")
+            st.write("Generate a PDF report or download the current cleaned dataset.")
+
+            cleaned_csv = df.to_csv(index=False)
+            st.download_button(
+                "Download Cleaned Dataset",
+                data=cleaned_csv,
+                file_name="cleaned_dataset.csv",
+                mime="text/csv",
+            )
 
             if st.button("Generate Report", type="primary"):
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
